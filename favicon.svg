@@ -1,0 +1,24 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="rocketGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fusée principale -->
+  <path d="M16 4L20 12H12L16 4Z" fill="url(#rocketGradient)"/>
+  <rect x="14" y="12" width="4" height="16" rx="2" fill="url(#rocketGradient)"/>
+  
+  <!-- Fenêtre de la fusée -->
+  <circle cx="16" cy="18" r="2" fill="white"/>
+  <circle cx="16" cy="18" r="1" fill="url(#rocketGradient)"/>
+  
+  <!-- Ailes -->
+  <path d="M12 20L8 24L12 24Z" fill="url(#rocketGradient)"/>
+  <path d="M20 20L24 24L20 24Z" fill="url(#rocketGradient)"/>
+  
+  <!-- Flammes -->
+  <path d="M14 28L16 32L18 28Z" fill="#f59e0b"/>
+  <path d="M15 29L16 31L17 29Z" fill="#fbbf24"/>
+</svg>

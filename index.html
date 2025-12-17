@@ -1,0 +1,904 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FlowStack - Plateforme SaaS Innovante</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="apple-touch-icon" href="favicon.png">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+    <link rel="stylesheet" href="css/modern-effects.css">
+    <link rel="stylesheet" href="css/chatbot.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/interactive-pricing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Particules en arrière-plan -->
+    <div id="particles-js" class="particles-bg"></div>
+    
+    <!-- Header avec navbar sticky -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <i class="fas fa-rocket"></i>
+                    <span>FlowStack</span>
+                </div>
+                
+                <ul class="nav-links">
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#features">Fonctionnalités</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#testimonials">Témoignages</a></li>
+                    <li><a href="#pricing">Tarifs</a></li>
+                </ul>
+                
+
+                <div class="nav-buttons">
+                    <a href="#" class="btn btn-outline">Connexion</a>
+                    <a href="#pricing" class="btn btn-primary">Essai gratuit</a>
+                </div>
+                
+                <button class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section Hero avec CTA -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="hero-badge">Nouveau • Déjà utilisé par 500+ entreprises</span>
+                    <h1 class="hero-title">Automatisez votre travail avec <span class="text-gradient">FlowStack</span></h1>
+                    <p class="hero-description">
+                        La plateforme SaaS tout-en-un qui simplifie vos processus, augmente votre productivité et fait croître votre entreprise. Essayez gratuitement pendant 30 jours.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#pricing" class="btn btn-primary btn-large">Commencer l'essai gratuit</a>
+                        <a href="#features" class="btn btn-outline btn-large">
+                            <i class="fas fa-play-circle"></i> Voir la démo
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <strong>99%</strong>
+                            <span>Satisfaction client</span>
+                        </div>
+                        <div class="stat">
+                            <strong>24/7</strong>
+                            <span>Support disponible</span>
+                        </div>
+                        <div class="stat">
+                            <strong>10K+</strong>
+                            <span>Utilisateurs actifs</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="dashboard-preview">
+                        <div class="dashboard-header">
+                            <div class="dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <div class="dashboard-title">Tableau de bord FlowStack</div>
+                        </div>
+                        <div class="dashboard-content">
+                            <div class="chart"></div>
+                            <div class="stats-grid">
+                                <div class="stat-card"></div>
+                                <div class="stat-card"></div>
+                                <div class="stat-card"></div>
+                                <div class="stat-card"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Services en grid -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Nos services</span>
+                <h2 class="section-title">Tout ce dont vous avez besoin pour réussir</h2>
+                <p class="section-description">
+                    FlowStack offre une suite complète d'outils conçus pour simplifier vos opérations et accélérer votre croissance.
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="service-title">Analyses avancées</h3>
+                    <p class="service-description">
+                        Obtenez des insights détaillés sur vos performances avec nos tableaux de bord personnalisables et rapports automatiques.
+                    </p>
+                    <a href="#" class="service-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="service-title">Automatisation IA</h3>
+                    <p class="service-description">
+                        Automatisez les tâches répétitives avec notre intelligence artificielle intégrée pour gagner du temps et réduire les erreurs.
+                    </p>
+                    <a href="#" class="service-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="service-title">Sécurité de niveau entreprise</h3>
+                    <p class="service-description">
+                        Vos données sont protégées par un chiffrement de bout en bout et une conformité aux normes de sécurité les plus strictes.
+                    </p>
+                    <a href="#" class="service-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="service-title">Collaboration d'équipe</h3>
+                    <p class="service-description">
+                        Travaillez efficacement avec votre équipe grâce à nos outils de partage, de commentaires et de gestion de projets.
+                    </p>
+                    <a href="#" class="service-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h3 class="service-title">Intégrations</h3>
+                    <p class="service-description">
+                        Connectez FlowStack à vos outils préférés (Slack, Salesforce, Google Workspace, etc.) avec nos API robustes.
+                    </p>
+                    <a href="#" class="service-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="service-title">Support prioritaire</h3>
+                    <p class="service-description">
+                        Bénéficiez d'un support client dédié et de ressources de formation pour tirer le meilleur parti de notre plateforme.
+                    </p>
+                    <a href="#" class="service-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Section Dashboard Interactif -->
+    <section id="features" class="features-interactive">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Tableau de bord</span>
+                <h2 class="section-title">Voyez FlowStack en action</h2>
+
+                <p class="section-description">
+                    Explorez notre interface intuitive avec des données en temps réel et des insights puissants.
+                </p>
+            </div>
+            
+            <div class="dashboard-container">
+                <div class="dashboard-sidebar">
+                    <div class="sidebar-section">
+                        <h3>Navigation</h3>
+                        <nav class="dashboard-nav">
+                            <a href="#" class="nav-item active" data-view="overview">
+                                <i class="fas fa-chart-pie"></i>
+                                <span>Aperçu</span>
+                            </a>
+                            <a href="#" class="nav-item" data-view="analytics">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Analytiques</span>
+                            </a>
+                            <a href="#" class="nav-item" data-view="automation">
+                                <i class="fas fa-robot"></i>
+                                <span>Automatisation</span>
+                            </a>
+                            <a href="#" class="nav-item" data-view="team">
+                                <i class="fas fa-users"></i>
+                                <span>Équipe</span>
+                            </a>
+                        </nav>
+                    </div>
+                    
+                    <div class="sidebar-section">
+                        <h3>Actions Rapides</h3>
+                        <div class="quick-actions-grid">
+                            <button class="quick-action-btn" data-action="new-project">
+                                <i class="fas fa-plus"></i>
+                                <span>Nouveau Projet</span>
+                            </button>
+                            <button class="quick-action-btn" data-action="invite-team">
+                                <i class="fas fa-user-plus"></i>
+                                <span>Inviter</span>
+                            </button>
+                            <button class="quick-action-btn" data-action="generate-report">
+                                <i class="fas fa-file-export"></i>
+                                <span>Rapport</span>
+                            </button>
+                            <button class="quick-action-btn" data-action="settings">
+                                <i class="fas fa-cog"></i>
+                                <span>Paramètres</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dashboard-main">
+                    <div class="dashboard-header">
+                        <div class="dashboard-title-section">
+                            <h1>Tableau de Bord FlowStack</h1>
+                            <p class="dashboard-subtitle">Dernière mise à jour : il y a 2 minutes</p>
+                        </div>
+                        <div class="dashboard-actions">
+                            <button class="btn btn-outline">
+                                <i class="fas fa-sync-alt"></i>
+                                Actualiser
+                            </button>
+                            <button class="btn btn-primary">
+                                <i class="fas fa-plus"></i>
+                                Nouveau
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="dashboard-metrics">
+                        <div class="metric-card card-3d floating">
+                            <div class="metric-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="metric-content">
+                                <h3>Utilisateurs Actifs</h3>
+                                <div class="metric-value">2,847</div>
+                                <div class="metric-change positive">
+                                    <i class="fas fa-arrow-up"></i>
+                                    +12.5% ce mois
+                                </div>
+                            </div>
+                            <div class="metric-chart">
+                                <canvas id="usersChart" width="80" height="40"></canvas>
+                            </div>
+                        </div>
+                        
+                        <div class="metric-card card-3d floating" style="animation-delay: 0.2s;">
+                            <div class="metric-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="metric-content">
+                                <h3>Revenus Mensuels</h3>
+                                <div class="metric-value">€47,293</div>
+                                <div class="metric-change positive">
+                                    <i class="fas fa-arrow-up"></i>
+                                    +8.2% ce mois
+                                </div>
+                            </div>
+                            <div class="metric-chart">
+                                <canvas id="revenueChart" width="80" height="40"></canvas>
+                            </div>
+                        </div>
+                        
+                        <div class="metric-card card-3d floating" style="animation-delay: 0.4s;">
+                            <div class="metric-icon">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <div class="metric-content">
+                                <h3>Tâches Automatisées</h3>
+                                <div class="metric-value">1,429</div>
+                                <div class="metric-change positive">
+                                    <i class="fas fa-arrow-up"></i>
+                                    +23.1% ce mois
+                                </div>
+                            </div>
+                            <div class="metric-chart">
+                                <canvas id="tasksChart" width="80" height="40"></canvas>
+                            </div>
+                        </div>
+                        
+                        <div class="metric-card card-3d floating" style="animation-delay: 0.6s;">
+                            <div class="metric-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="metric-content">
+                                <h3>Temps Économisé</h3>
+                                <div class="metric-value">847h</div>
+                                <div class="metric-change positive">
+                                    <i class="fas fa-arrow-up"></i>
+                                    +15.7% ce mois
+                                </div>
+                            </div>
+                            <div class="metric-chart">
+                                <canvas id="timeChart" width="80" height="40"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="dashboard-charts">
+                        <div class="chart-section">
+                            <div class="chart-header">
+                                <h3>Performance des 30 derniers jours</h3>
+                                <div class="chart-controls">
+                                    <button class="chart-period active" data-period="7d">7j</button>
+                                    <button class="chart-period" data-period="30d">30j</button>
+                                    <button class="chart-period" data-period="90d">90j</button>
+                                </div>
+                            </div>
+                            <div class="chart-container">
+                                <canvas id="mainChart" width="400" height="200"></canvas>
+                            </div>
+                        </div>
+                        
+                        <div class="recent-activity">
+                            <h3>Activité Récente</h3>
+                            <div class="activity-list">
+                                <div class="activity-item">
+                                    <div class="activity-icon">
+                                        <i class="fas fa-user-plus"></i>
+                                    </div>
+                                    <div class="activity-content">
+                                        <p><strong>Nouvel utilisateur</strong> s'est inscrit</p>
+                                        <span class="activity-time">Il y a 5 minutes</span>
+                                    </div>
+                                </div>
+                                <div class="activity-item">
+                                    <div class="activity-icon">
+                                        <i class="fas fa-cog"></i>
+                                    </div>
+                                    <div class="activity-content">
+                                        <p><strong>Automatisation</strong> "Lead Nurturing" activée</p>
+                                        <span class="activity-time">Il y a 12 minutes</span>
+                                    </div>
+                                </div>
+                                <div class="activity-item">
+                                    <div class="activity-icon">
+                                        <i class="fas fa-chart-bar"></i>
+                                    </div>
+                                    <div class="activity-content">
+                                        <p><strong>Rapport mensuel</strong> généré automatiquement</p>
+                                        <span class="activity-time">Il y a 1 heure</span>
+                                    </div>
+                                </div>
+                                <div class="activity-item">
+                                    <div class="activity-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="activity-content">
+                                        <p><strong>Campagne email</strong> envoyée à 1,247 contacts</p>
+                                        <span class="activity-time">Il y a 2 heures</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Section Pricing Interactive -->
+    <section id="pricing" class="pricing-interactive">
+        <div class="container">
+            <div class="pricing-header">
+                <span class="section-subtitle">Tarification</span>
+                <h2 class="section-title">Choisissez le plan parfait pour vous</h2>
+                <p class="section-description">
+                    Des tarifs transparents et flexibles qui s'adaptent à vos besoins. Essayez gratuitement pendant 30 jours.
+                </p>
+                
+                <!-- Toggle mensuel/annuel -->
+                <div class="pricing-toggle">
+                    <button class="pricing-option active" data-billing="monthly">
+                        Mensuel
+                    </button>
+                    <button class="pricing-option" data-billing="yearly">
+                        Annuel <span class="save-badge">-20%</span>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Cards de pricing -->
+            <div class="pricing-grid">
+                <!-- Plan Starter -->
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <h3 class="plan-name">Starter</h3>
+                        <p class="plan-description">Parfait pour les petites équipes et les projets personnels</p>
+                    </div>
+                    
+                    <div class="pricing-card-price">
+                        <div class="price-amount">
+                            <span class="price-currency">€</span>
+                            <span class="price-value" data-monthly="29" data-yearly="23">29</span>
+                        </div>
+                        <div class="price-period">par mois</div>
+                        <div class="price-note">Facturé mensuellement</div>
+                    </div>
+                    
+                    <ul class="pricing-features">
+                        <li>
+                            <div class="feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="feature-text">Jusqu'à 5 utilisateurs</span>
+                        </li>
+                        <li>
+                            <div class="feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="feature-text">10 projets actifs</span>
+                        </li>
+                        <li>
+                            <div class="feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="feature-text">10 GB de stockage</span>
+                        </li>
+                        <li>
+                            <div class="feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="feature-text">Support email</span>
+                        </li>
+                        <li>
+                            <div class="feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="feature-text">Intégrations de base</span>
+                        </li>
+                        <li>
+                            <div class="feature-icon">
+                                <i class="fas fa-times"></i>
+                            </div>
+                            <span class="feature-text disabled">API avancée</span>
+                        </li>
+                        <li>
+                            <div class="feature-icon">
+                                <i class="fas fa-times"></i>
+                            </div>
+                            <span class="feature-text disabled">Support prioritaire</span>
+                        </li>
+                    </ul>
+                    
+                    <button class="pricing-cta secondary">Commencer gratuitement</button>
+                </div>
+                
+                <!-- Plan Professional -->
+                <div class="pricing-card featured">
+                    <div class="pricing-card-header">
+                        <h3 class="plan-name">Professional</h3>
+                        <p class="plan-description">Idéal pour les équipes en croissance et les startups</p>
+                    </div>
+                    
+                    <div class="pricing-card-price">
+                        <div class="price-amount">
+                            <span class="price-currency">€</span>
+                            <span class="price-value" data-monthly="79" data-yearly="63">79</span>
+                        </div>
+                        <div class="price-period">par mois</div>
+                        <div class="price-note">Facturé mensuellement</div>
+                    </div>
+                    
+                    <ul class="pricing-features">
+                        <li>
+                            <div class="feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="feature-text">Jusqu'à 25 utilisateurs</span>
+                        </li>
+                        <li>
+                            <div class="feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="feature-text">Projets illimités</span>
+                        </li>
+                        <li>
+                            <div class="feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="feature-text">100 GB de stockage</span>
+                        </li>
+                        <li>
+                            <div class="feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="feature-text">Support chat en direct</span>
+                        </li>
+                        <li>
+                            <div class="feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="feature-text">Toutes les intégrations</span>
+                        </li>
+                        <li>
+                            <div class="feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="feature-text">API avancée</span>
+                        </li>
+                        <li>
+                            <div class="feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="feature-text">Analyses avancées</span>
+                        </li>
+                        <li>
+                            <div class="feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="feature-text">Automatisations</span>
+                        </li>
+                    </ul>
+                    
+                    <button class="pricing-cta primary">Essayer 30 jours gratuits</button>
+                </div>
+                
+                <!-- Plan Enterprise -->
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <h3 class="plan-name">Enterprise</h3>
+                        <p class="plan-description">Pour les grandes entreprises avec des besoins spécifiques</p>
+                    </div>
+                    
+                    <div class="pricing-card-price">
+                        <div class="price-amount">
+                            <span class="price-currency">€</span>
+                            <span class="price-value" data-monthly="199" data-yearly="159">199</span>
+                        </div>
+                        <div class="price-period">par mois</div>
+                        <div class="price-note">Facturé mensuellement</div>
+                    </div>
+                    
+                    <ul class="pricing-features">
+                        <li>
+                            <div class="feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="feature-text">Utilisateurs illimités</span>
+                        </li>
+                        <li>
+                            <div class="feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="feature-text">Projets illimités</span>
+                        </li>
+                        <li>
+                            <div class="feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="feature-text">Stockage illimité</span>
+                        </li>
+                        <li>
+                            <div class="feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="feature-text">Support téléphonique 24/7</span>
+                        </li>
+                        <li>
+                            <div class="feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="feature-text">Intégrations personnalisées</span>
+                        </li>
+                        <li>
+                            <div class="feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="feature-text">SLA garanti 99.9%</span>
+                        </li>
+                        <li>
+                            <div class="feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="feature-text">Formation dédiée</span>
+                        </li>
+                        <li>
+                            <div class="feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="feature-text">Conformité RGPD/SOC2</span>
+                        </li>
+                        <li>
+                            <div class="feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="feature-text">Manager dédié</span>
+                        </li>
+                    </ul>
+                    
+                    <button class="pricing-cta secondary">Contacter les ventes</button>
+                </div>
+            </div>
+            
+            <!-- Calculateur de prix -->
+            <div class="pricing-calculator">
+                <h3 class="calculator-title">Calculateur de prix personnalisé</h3>
+                <div class="calculator-controls">
+                    <div class="calculator-control">
+                        <label class="control-label">Nombre d'utilisateurs</label>
+                        <div class="control-value">
+                            <span id="users-count">10</span> utilisateurs
+                        </div>
+                        <input type="range" class="range-slider" id="users-slider" 
+                               min="1" max="100" value="10" step="1">
+                    </div>
+                    
+                    <div class="calculator-control">
+                        <label class="control-label">Projets par mois</label>
+                        <div class="control-value">
+                            <span id="projects-count">5</span> projets
+                        </div>
+                        <input type="range" class="range-slider" id="projects-slider" 
+                               min="1" max="50" value="5" step="1">
+                    </div>
+                    
+                    <div class="calculator-control">
+                        <label class="control-label">Stockage requis</label>
+                        <div class="control-value">
+                            <span id="storage-count">50</span> GB
+                        </div>
+                        <input type="range" class="range-slider" id="storage-slider" 
+                               min="10" max="500" value="50" step="10">
+                    </div>
+                </div>
+                
+                <div class="calculator-result">
+                    <div class="result-label">Prix estimé pour votre configuration</div>
+                    <div class="result-amount">
+                        <span class="result-currency">€</span>
+                        <span id="calculated-price">67</span>
+                    </div>
+                    <div class="result-period">par mois (facturation mensuelle)</div>
+                    
+                    <div class="result-features">
+                        <div class="result-feature">
+                            <i class="fas fa-users"></i>
+                            <span id="calc-users">10 utilisateurs</span>
+                        </div>
+                        <div class="result-feature">
+                            <i class="fas fa-project-diagram"></i>
+                            <span id="calc-projects">5 projets</span>
+                        </div>
+                        <div class="result-feature">
+                            <i class="fas fa-hdd"></i>
+                            <span id="calc-storage">50 GB stockage</span>
+                        </div>
+                    </div>
+                    
+                    <button class="pricing-cta primary">Commencer l'essai gratuit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Témoignages -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Témoignages</span>
+                <h2 class="section-title">Ils nous font confiance</h2>
+                <p class="section-description">
+                    Découvrez comment FlowStack a transformé la façon dont ces entreprises travaillent.
+                </p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "FlowStack a révolutionné notre gestion de projet. Notre productivité a augmenté de 40% en seulement 3 mois. L'automatisation nous fait gagner des heures chaque jour."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Marie Dubois</h4>
+                            <span>CEO, TechVision</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "La plateforme est intuitive et puissante. L'intégration avec nos outils existants a été fluide. Le support client est réactif et compétent."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Thomas Martin</h4>
+                            <span>Directeur Marketing, InnovateCo</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Les analyses nous ont donné une visibilité incomparable sur nos performances. Nous avons identifié des opportunités que nous avions manquées auparavant."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Sophie Lambert</h4>
+                            <span>Directrice Financière, GrowthLab</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonials-logos">
+                <div class="logo-item">
+                    <i class="fas fa-building"></i> <span>Enterprise Solutions</span>
+                </div>
+                <div class="logo-item">
+                    <i class="fas fa-cloud"></i> <span>CloudTech</span>
+                </div>
+                <div class="logo-item">
+                    <i class="fas fa-chart-pie"></i> <span>DataSphere</span>
+                </div>
+                <div class="logo-item">
+                    <i class="fas fa-mobile-alt"></i> <span>MobileFirst</span>
+                </div>
+                <div class="logo-item">
+                    <i class="fas fa-globe"></i> <span>GlobalNet</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Prêt à transformer votre entreprise ?</h2>
+                <p class="cta-description">
+                    Rejoignez les milliers d'entreprises qui font confiance à FlowStack. Commencez votre essai gratuit de 30 jours dès aujourd'hui.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#pricing" class="btn btn-primary btn-large">Commencer l'essai gratuit</a>
+                    <a href="#" class="btn btn-outline btn-large">Contacter les ventes</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer sombre -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <i class="fas fa-rocket"></i>
+                        <span>FlowStack</span>
+                    </div>
+                    <p class="footer-description">
+                        La plateforme SaaS tout-en-un pour automatiser vos processus et accélérer la croissance de votre entreprise.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Produit</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Fonctionnalités</a></li>
+                        <li><a href="#">Tarifs</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Statut</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Entreprise</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">À propos</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Carrières</a></li>
+                        <li><a href="#">Presse</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Ressources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Centre d'aide</a></li>
+                        <li><a href="#">Communauté</a></li>
+                        <li><a href="#">Guides</a></li>
+                        <li><a href="#">Webinaires</a></li>
+                        <li><a href="#">Partenaires</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Légal</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">Conditions d'utilisation</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">RGPD</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> FlowStack. Tous droits réservés.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">Conditions d'utilisation</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/theme-manager.js"></script>
+    <script src="js/animations-3d.js"></script>
+    <script src="js/chatbot.js"></script>
+    <!-- Particles.js pour les effets de particules -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</body>
+</html>
