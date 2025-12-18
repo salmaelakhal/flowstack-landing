@@ -11,21 +11,37 @@ window.addEventListener('scroll', () => {
     }
 });
 
+
 // Menu mobile
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 
-if (menuToggle) {
+if (menuToggle && navLinks) {
     menuToggle.addEventListener('click', () => {
-        navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        navLinks.classList.toggle('active');
+        const icon = menuToggle.querySelector('i');
+        if (icon) {
+            if (navLinks.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        }
     });
 }
 
 // Fermer le menu mobile en cliquant sur un lien
 document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => {
-        if (window.innerWidth <= 768) {
-            navLinks.style.display = 'none';
+        if (navLinks.classList.contains('active')) {
+            navLinks.classList.remove('active');
+            const icon = menuToggle.querySelector('i');
+            if (icon) {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
         }
     });
 });
@@ -83,116 +99,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Responsive : ajuster la navigation
+
+// Responsive : géré par CSS désormais
 function handleResponsiveNav() {
-    if (window.innerWidth <= 1024) {
-        // Services grid: 3 colonnes -> 2 colonnes
-        const servicesGrid = document.querySelector('.services-grid');
-        if (servicesGrid && window.innerWidth <= 1024 && window.innerWidth > 768) {
-            servicesGrid.style.gridTemplateColumns = 'repeat(2, 1fr)';
-        }
-        
-        if (window.innerWidth <= 768) {
-            // Services grid: 2 colonnes -> 1 colonne
-            if (servicesGrid) {
-                servicesGrid.style.gridTemplateColumns = '1fr';
-            }
-            
-            // Testimonials grid: 3 colonnes -> 1 colonne
-            const testimonialsGrid = document.querySelector('.testimonials-grid');
-            if (testimonialsGrid) {
-                testimonialsGrid.style.gridTemplateColumns = '1fr';
-            }
-            
-            // Footer grid: 5 colonnes -> 2 colonnes
-            const footerGrid = document.querySelector('.footer-grid');
-            if (footerGrid) {
-                footerGrid.style.gridTemplateColumns = 'repeat(2, 1fr)';
-            }
-            
-            // Navbar: afficher le bouton menu, cacher les liens
-            if (navLinks) {
-                navLinks.style.display = 'none';
-                navLinks.style.flexDirection = 'column';
-                navLinks.style.position = 'absolute';
-                navLinks.style.top = '100%';
-                navLinks.style.left = '0';
-                navLinks.style.width = '100%';
-                navLinks.style.backgroundColor = 'var(--white)';
-                navLinks.style.padding = '20px';
-                navLinks.style.boxShadow = '0 10px 30px rgba(0,0,0,0.1)';
-                navLinks.style.borderRadius = '0 0 8px 8px';
-                navLinks.style.gap = '15px';
-            }
-            
-            if (menuToggle) {
-                menuToggle.style.display = 'block';
-            }
-            
-            // Hero: passer en colonne
-            const heroContent = document.querySelector('.hero-content');
-            if (heroContent) {
-                heroContent.style.flexDirection = 'column';
-            }
-            
-            // CTA buttons: colonne sur mobile
-            const ctaButtons = document.querySelector('.cta-buttons');
-            if (ctaButtons) {
-                ctaButtons.style.flexDirection = 'column';
-                ctaButtons.style.alignItems = 'center';
-            }
-            
-            // Hero CTA: colonne sur mobile
-            const heroCta = document.querySelector('.hero-cta');
-            if (heroCta) {
-                heroCta.style.flexDirection = 'column';
-                heroCta.style.alignItems = 'flex-start';
-            }
-        } else {
-            // Pour les écrans plus larges que 768px
-            if (navLinks) {
-                navLinks.style.display = 'flex';
-                navLinks.style.position = 'static';
-                navLinks.style.backgroundColor = 'transparent';
-                navLinks.style.boxShadow = 'none';
-                navLinks.style.padding = '0';
-                navLinks.style.flexDirection = 'row';
-            }
-            
-            if (menuToggle) {
-                menuToggle.style.display = 'none';
-            }
-        }
-    } else {
-        // Pour les grands écrans (> 1024px)
-        const servicesGrid = document.querySelector('.services-grid');
-        if (servicesGrid) {
-            servicesGrid.style.gridTemplateColumns = 'repeat(3, 1fr)';
-        }
-        
-        const testimonialsGrid = document.querySelector('.testimonials-grid');
-        if (testimonialsGrid) {
-            testimonialsGrid.style.gridTemplateColumns = 'repeat(3, 1fr)';
-        }
-        
-        const footerGrid = document.querySelector('.footer-grid');
-        if (footerGrid) {
-            footerGrid.style.gridTemplateColumns = '2fr repeat(4, 1fr)';
-        }
-        
-        if (navLinks) {
-            navLinks.style.display = 'flex';
-        }
-        
-        if (menuToggle) {
-            menuToggle.style.display = 'none';
-        }
-    }
+    // La gestion responsive est maintenant effectuée via CSS media queries
+    // Cette fonction est conservée vide pour éviter les erreurs si elle est appelée ailleurs
 }
 
 // Initialiser le responsive
-window.addEventListener('load', handleResponsiveNav);
-window.addEventListener('resize', handleResponsiveNav);
+// window.addEventListener('load', handleResponsiveNav);
+// window.addEventListener('resize', handleResponsiveNav);
 
 
 // Initialiser l'animation au chargement
